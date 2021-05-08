@@ -1,0 +1,3 @@
+I'm inside the file.
+I'm just typing stuff here.
+I hope these 3 lines are seen by my program.
