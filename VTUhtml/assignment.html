@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="handcrafts, indian handcrafts, handmade, type all meta keywords here" />
+        <meta name="description" content="place the meta description text here" />
+        <title>product page</title>
+
+        <link rel="icon" href="/static/img/logo.ico" type="image/x-icon" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script
+            src="https://wp.incredibbble.com/writsy-shop/wp-content/themes/writsy-shop/assets/vendor/jquery-zoom/jquery.zoom.min.js?ver=1.7.18"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp" />
+        <link rel="stylesheet" href="/static/stylesheets/product.css" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css" />
+
+        <style>
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+            color: rgb(0, 44, 70) !important;
+            font-weight: 400 !important;
+            }
+
+            th {
+            color: rgb(0, 44, 70) !important;
+            font-weight:500 !important;
+            }
+
+            .wrapper {
+      width: 100%;
+      padding-top: 0px;
+      text-align: center;
+      position: relative;
+    }
+
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  max-width: 100%;
+  background-color: rgb(252, 252, 252) !important;
+}
+/* .container {
+  background-color: rgb(248, 248, 248);
+} */
+.product-small-img img {
+  height: 100px;
+  margin: 10px -40px;
+  cursor: pointer;
+  display: block;
+  opacity: 0.9;
+  width: 80px;
+  /* object-fit: cover; */
+}
+.product-small-img li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.product-small-img {
+  float: left;
+  width: 70px;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-small-img img:hover {
+  opacity: 1;
+}
+
+.product {
+  position: absolute;
+}
+
+.img-container {
+  float: right;
+}
+.rupee {
+  height: 1rem;
+  position: relative;
+  top: -0.2em !important;
+  margin-right: 3px;
+}
+.product-small-img-mobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .product-small-img img {
+    margin: 10px 0px;
+  }
+  .product-small-img-mobile {
+    display: block;
+    margin-top: 15px;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+  }
+  .product-small-img-web {
+    display: none;
+  }
+  .product-small-img-mobile ul li {
+    display: inline-block;
+    list-style-type: none;
+    *display: inline;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  .product-small-img-mobile img {
+    display: block;
+    border-radius: 2rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .img-container img {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+  }
+  .img-container {
+    margin: auto;
+  }
+}
+
+@media (min-width: 651px) {
+  .img-container {
+    padding-left: 20px;
+  }
+  iframe {
+    width: 450px;
+  }
+}
+
+table .text-left {
+  vertical-align: middle;
+}
+
+ 
+    footer {
+      padding: 20px;
+      bottom: 0;
+    }
+
+    footer a {
+      color: #f8f9fa !important;
+      text-decoration: none;
+    }
+
+    .material-icons-round {
+      font-size: 25px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+    }
+
+    .btn:focus,
+    .btn:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .icon-button {
+      background-color: transparent;
+      border-radius: 6rem;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.6rem;
+      width: 2.8rem;
+      height: 2.8rem;
+      line-height: 2.5rem;
+      margin: 0 0px;
+      position: relative;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Circle */
+    .icon-button span {
+      border-radius: 0;
+      display: block;
+      height: 0;
+      left: 50%;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+
+      width: 0;
+    }
+
+
+    .icon-button:hover span {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 6rem;
+      margin: 0rem;
+    }
+
+    /* Icons */
+    .icon-button i {
+      background: none;
+      color: white;
+      height: 2.6rem;
+      left: 0;
+      line-height: 2.6rem;
+      position: absolute;
+      top: 0;
+      width: 2.6rem;
+      z-index: 10;
+    }
+
+    .icon-button:hover {
+      background-color: #283646;
+    }
+
+    .icon-button:hover .fa-twitter {
+      color: #4099ff;
+    }
+
+    .icon-button:hover .fa-facebook-f {
+      color: #1778f2;
+    }
+
+    .icon-button:hover .fa-tumblr {
+      color: #34526f;
+    }
+
+    .icon-button:hover .fa-google-plus {
+      color: #db5a3c;
+    }
+
+    .icon-button:hover .fa-instagram {
+      color: #e1306c;
+    }
+
+    .icon-button:hover .fa-youtube {
+      color: #bb0000;
+    }
+
+    .icon-button:hover .fa-pinterest {
+      color: #cb2027;
+    }
+
+    .icon-button .fa-twitter,
+    .icon-button .fa-facebook-f,
+    .icon-button .fa-google-plus,
+    .icon-button .fa-tumblr,
+    .icon-button .fa-instagram,
+    .icon-button .fa-youtube,
+    .icon-button .fa-pinterest {
+      color: white;
+    }
+
+    .categories_web_li:hover {
+      background-color: rgb(194, 230, 255);
+      box-shadow: 0 0 10px rgb(204, 204, 204);
+    }
+
+    .categories_web_li .categories_web_a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: normal;
+    }
+
+    .categories_web_li {
+      justify-items: center;
+      text-align: center;
+      padding: 5px;
+      margin-bottom: 3px;
+      font-size: 15px;
+    }
+    .categories_web_ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
+    .categories_web {
+      color: black;
+      text-align: center;
+      background-color: rgb(249, 255, 255);
+      border-right: rgb(218, 218, 218) 2px solid;
+    }
+    body{
+      font-family: 'Courier New', Courier, monospace;
+      background: rgb(250, 144, 144);
+      font-size: 1.1em;
+    }
+    .container-fluid{
+      background-color:rgb(251, 196, 196) ;
+    }
+    div.btn-group{
+      font-size: .6em;
+    }
+    footer{
+      color: #212d3b;
+    }
+        </style>
+       
+        </head>
+        <script>
+        function imgFunction(smallImg) {
+            var fullImg = document.getElementById("image-box");
+            fullImg.src = smallImg.src;
+        }
+        </script>
+        <script>
+        $(function () {
+            AOS.init({
+            duration: 500,
+            });
+        });
+        </script>
+
+
+    <body>
+        <div class="container-fluid">
+            <h5 class="mt-4 text-center">Product in store</h5>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row mt-3">
+                        <div class="col-lg-5">
+                            <div class="mx-auto d-flex justify-content-center flex-wrap">
+                                <div class="img-container" style="margin-top: 10px">
+                                    <img src="https://wallup.net/wp-content/uploads/2019/09/841798-lamborghini-aventador-super-veloce-cars-supercars-red.jpg" alt="ff" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <h4 style="text-transform: capitalize;font-size:20px;">product title</h4>
+                            <p style="color:grey">product short_description</p>
+                            
+        
+                            <div class="ml-0 overflow-hidden" style="font-size: 15px">
+                                <div class="float-left">
+                                    <p style="display: inline">Price :</p>
+                                    <p style="
+                                        font-size: 16px;
+                                        display: inline;
+                                        vertical-align: top;
+                                        color: #b12704;
+                                        ">
+                                    ₹
+                                    </p>
+                                    <p style="font-size: 18px; display: inline; color: #b12704" id="price">
+                                    6000
+                                    </p>
+                                </div>
+                            </div>
+                            <br/>
+                            <h5 class="mt-3">Details</h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped text-left table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="w-25">Material</th>
+                                        <td class="text-left">product material</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Package Dimensions (L*W*H)</th>
+                                        <td class="text-left">
+                                        10*30*89 cm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Weight</th>
+                                        <td class="text-left">500 g</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <input type ='submit' class="btn btn-lg text-black" 
+                                style="background-image: linear-gradient(
+                                    rgb(250, 144, 144),
+                                    rgb(250, 144, 144)
+                                );font-size: 16px;
+                                " value="Add to Cart"/>
+                            <input type ='submit' class="btn btn-lg text-black" 
+                            style="background-image: linear-gradient(
+                                rgb(250, 144, 144),
+                                rgb(250, 144, 144)
+                            );font-size: 16px;
+                            " value="Add to Wish List"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="container categories_web pt-3 mt-3 pb-5">
+                        <h5 style="color: rgb(0, 48, 77)">Categories</h5>
+                        <ul class="categories_web_ul">
+                          <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/all_products/">All products</a>
+                          </li>
+                          <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/category_product_list/0/">Women's clothing</a>
+                          </li>
+                          <!-- <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/category_product_list/1/">Men's clothing</a>
+                          </li> -->
+                          <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/category_product_list/2/">Wooden toys</a>
+                          </li>
+                          <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/category_product_list/3/">Home decor</a>
+                          </li>
+                          <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/category_product_list/4/">Jewellery</a>
+                          </li>
+                          <li class="categories_web_li">
+                            <a class="categories_web_a btn p-0 pt-0" href="/category_product_list/5/">Scented candles</a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div  class="my-5 container-fluid">
+            <div class="container-fluid">
+                <h5>Customers also liked these products</h5>
+                <p>Sponsered</p>
+            </div>
+            <div class="row w-100 mx-0">
+                <div class="col-6 col-lg-3 col-sm-4 col-xs-6 px-1 px-sm-2 px-xl-4 pb-3 ">
+                    <a href="{{p.getabsoluteurl}}" class="cards_a " style="text-decoration: none">
+                    <div class="card border-0 text-center prod-cards mb-2 h-100 prod__div">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="https://2.bp.blogspot.com/-V2mi7Lyjo9A/VU_h2TCmFmI/AAAAAAAAOpk/3uv0Boos3GI/s1600/Danish_Modern_Moreddi_Teak_Nesting_Tables_6.JPG" alt="Card image cap"
+                                style="object-fit: fill" {%if p.second_photo %} onmouseover="this.src='https://4.imimg.com/data4/JS/IC/MY-22548752/wood-coffee-table-500x500.jpg'"
+                                {%endif%} onmouseout="this.src='https://4.imimg.com/data4/JS/IC/MY-22548752/wood-coffee-table-500x500.jpg'" />
+                        </div>
+                        <div class="card-body prod_pad">
+                            <p class="card-title m-0" style="font-size: 15px;text-transform: capitalize;">
+                                Title
+                            </p>
+                            <p class="card-text m-0 w-100" id="{{p.title}}{{p.id}}" style="color:grey;font-size:14px;text-transform: capitalize; white-space: nowrap; 
+                            width: 100%; 
+                            overflow: hidden;
+                            text-overflow: ellipsis;">
+                                short_description
+                            </p>
+                            <div class="card-text" style="font-size: 15px">
+                                <div>
+                                    <p style="
+                                            font-size: 14px;
+                                            display: inline;
+                                            vertical-align: top;
+                                            color: #b12704;
+                                        ">
+                                        ₹
+                                    </p>
+                                    <div style="font-size: 16px; display: inline; color: #b12704;margin-right:.5rem; font-weight:500; " id="{{p.id}}_price">
+                                        600
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">cart</button>
+                                <button type="button" class="btn btn-secondary">wish list</button>
+                                <button type="button" class="btn btn-secondary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-4 col-xs-6 px-1 px-sm-2 px-xl-4 pb-3 ">
+                    <a href="{{p.getabsoluteurl}}" class="cards_a " style="text-decoration: none">
+                    <div class="card border-0 text-center prod-cards mb-2 h-100 prod__div">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="https://1.bp.blogspot.com/-SfbvXiKFfjc/VU_iDOBfiEI/AAAAAAAAOrE/gZDrRfgQq9s/s1600/Danish_Modern_Moreddi_Teak_Nesting_Tables_18.JPG" alt="Card image cap"
+                                style="object-fit: fill" {%if p.second_photo %} onmouseover="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTkMIs7gueQe-yjg3Ige7RcOeqd-uV-uZTg&usqp=CAU'"
+                                {%endif%} onmouseout="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTkMIs7gueQe-yjg3Ige7RcOeqd-uV-uZTg&usqp=CAU'" />
+                        </div>
+                        <div class="card-body prod_pad">
+                            <p class="card-title m-0" style="font-size: 15px;text-transform: capitalize;">
+                                title
+                            </p>
+                            <p class="card-text m-0 w-100" id="{{p.title}}{{p.id}}" style="color:grey;font-size:14px;text-transform: capitalize; white-space: nowrap; 
+                            width: 100%; 
+                            overflow: hidden;
+                            text-overflow: ellipsis;">
+                                short_description
+                            </p>
+                            <div class="card-text" style="font-size: 15px">
+                                <div>
+                                    <p style="
+                                            font-size: 14px;
+                                            display: inline;
+                                            vertical-align: top;
+                                            color: #b12704;
+                                        ">
+                                        ₹
+                                    </p>
+                                    <div style="font-size: 16px; display: inline; color: #b12704;margin-right:.5rem; font-weight:500; " id="{{p.id}}_price">
+                                       500
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">cart</button>
+                                <button type="button" class="btn btn-secondary">wish list</button>
+                                <button type="button" class="btn btn-secondary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-4 col-xs-6 px-1 px-sm-2 px-xl-4 pb-3 ">
+                    <a href="{{p.getabsoluteurl}}" class="cards_a " style="text-decoration: none">
+                    <div class="card border-0 text-center prod-cards mb-2 h-100 prod__div">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFc2LVgy7ciHE5bLukeX_7zcCWzh-yw80IOQ&usqp=CAU" alt="Card image cap"
+                                style="object-fit: fill" {%if p.second_photo %} onmouseover="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFc2LVgy7ciHE5bLukeX_7zcCWzh-yw80IOQ&usqp=CAU'"
+                                {%endif%} onmouseout="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFc2LVgy7ciHE5bLukeX_7zcCWzh-yw80IOQ&usqp=CAU'" />
+                        </div>
+                        <div class="card-body prod_pad">
+                            <p class="card-title m-0" style="font-size: 15px;text-transform: capitalize;">
+                                title
+                            </p>
+                            <p class="card-text m-0 w-100" id="{{p.title}}{{p.id}}" style="color:grey;font-size:14px;text-transform: capitalize; white-space: nowrap; 
+                            width: 100%; 
+                            overflow: hidden;
+                            text-overflow: ellipsis;">
+                                short_description
+                            </p>
+                            <div class="card-text" style="font-size: 15px">
+                                <div>
+                                    <p style="
+                                            font-size: 14px;
+                                            display: inline;
+                                            vertical-align: top;
+                                            color: #b12704;
+                                        ">
+                                        ₹
+                                    </p>
+                                    <div style="font-size: 16px; display: inline; color: #b12704;margin-right:.5rem; font-weight:500; " id="{{p.id}}_price">
+                                        500
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">cart</button>
+                                <button type="button" class="btn btn-secondary">wish list</button>
+                                <button type="button" class="btn btn-secondary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-4 col-xs-6 px-1 px-sm-2 px-xl-4 pb-3 ">
+                    <a href="{{p.getabsoluteurl}}" class="cards_a " style="text-decoration: none">
+                    <div class="card border-0 text-center prod-cards mb-2 h-100 prod__div">
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <img class="card-img-top embed-responsive-item" src="https://cdn.bmstores.co.uk/images/hpcProductImage/imgFull/346271-tromso-square-nest-of-side-tables.jpg" alt="Card image cap"
+                                style="object-fit: fill" {%if p.second_photo %} onmouseover="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeZY2YLVJs6_Yc3l3stUXcSeuGJuN7qxY4g&usqp=CAU'"
+                                {%endif%} onmouseout="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeZY2YLVJs6_Yc3l3stUXcSeuGJuN7qxY4g&usqp=CAU'" />
+                        </div>
+                        <div class="card-body prod_pad">
+                            <p class="card-title m-0" style="font-size: 15px;text-transform: capitalize;">
+                                title
+                            </p>
+                            <p class="card-text m-0 w-100" id="{{p.title}}{{p.id}}" style="color:grey;font-size:14px;text-transform: capitalize; white-space: nowrap; 
+                            width: 100%; 
+                            overflow: hidden;
+                            text-overflow: ellipsis;">
+                                short_description
+                            </p>
+                            <div class="card-text" style="font-size: 15px">
+                                <div>
+                                    <p style="
+                                            font-size: 14px;
+                                            display: inline;
+                                            vertical-align: top;
+                                            color: #b12704;
+                                        ">
+                                        ₹
+                                    </p>
+                                    <div style="font-size: 16px; display: inline; color: #b12704;margin-right:.5rem; font-weight:500; " id="{{p.id}}_price">
+                                        500
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">cart</button>
+                                <button type="button" class="btn btn-secondary">wish list</button>
+                                <button type="button" class="btn btn-secondary">Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="text-light text-center p-0 footer_div" style="background-color: #212d3b;">
+            <div class="contaner-fluid">
+                <div class="container-fluid col-12 copyright text-center" style="background-color: #314155;">
+                    <button class="btn text-light" style="
+                        outline: transparent;
+                        border: none;
+                        background-color: transparent;
+                        " onclick="topFunction()" id="myBtn">
+                    <span class="material-icons"> arrow_drop_up </span><br />Back to top
+                    </button>
+                </div>
+                <div class="container-fluid px-md-5">
+                    <div class="row mt-4 p-4 text-center">
+                    <div class="col-md-3 px-md-0">
+                        <h4 class="text-white">About Us</h4>
+                        <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25" />
+                        <p class="mb-0 text-light px-md-0" style="font-size: 1rem;">
+                        Our company is an end product of optimistic people who want to
+                        promote local Indian artists. We intend to bring the experience
+                        of crafts fair at your convenience. We love seeing happy faces!
+                        Our ultimate goal is provide customer satisfaction.
+                        </p>
+                    </div>
+                    <div class="col-md-3 mt-5 mt-md-0">
+                        <h4 class="text-white">Contact details</h4>
+                        <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto w-25" />
+                        <ul class="list-unstyled">
+                        <li>
+                            <i class="mr-2"><span class="material-icons-round">
+                                house
+                            </span></i>company
+                        </li>
+            
+                        <li>
+                            <i class="mr-2"><span class="material-icons-round">
+                                mail
+                            </span></i>customersupport@company.com
+                        </li>
+                        <!-- <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li> -->
+                        </ul>
+                        <div class="pt-0">
+                        <a href="https://www.facebook.com/company-108483131034326" class="icon-button facebook"><i class="fab fa-facebook-f"></i><span></span></a>
+                        <a href="https://instagram.com/kraft_society?igshid=1ii668oy7ec82" class="icon-button instagram"><i
+                            class="fab fa-instagram"></i><span></span></a>
+                        <a href="https://www.youtube.com/channel/UC-1gmH8zZTFmvYn7QdJtbUw" class="icon-button youtube"><i class="fab fa-youtube"></i><span></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5 mt-md-0">
+                        <h4 class="text-white">Contact us</h4>
+                        <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto w-25" />
+                        <div class="row text-center">
+                            
+                            <div class="col-12 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-12 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input class="form-control" id="email" name="desc" placeholder="Description" type="text" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5 mt-md-0">
+                        <h4 class="text-white">Cart</h4>
+                        <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto w-25" />
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="p1.jpg" class="h-100 w-100"/>
+                            </div>
+                            <div class="col-8">
+                                <p>product name</p>
+                                <p>product description</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <img src="p1.jpg" class="h-100 w-100"/>
+                            </div>
+                            <div class="col-8">
+                                <p>product name</p>
+                                <p>product description</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr style="background-color: rgb(116, 116, 116);" />
+                    <div class="text-left m-0 pb-5">
+                    <p class="m-0 mt-3" style="font-size: 1rem; color: rgb(200, 190, 190);">
+                        &copy; 2020 company
+                    </p>
+                    </div>
+                </div>
+            </div>
+          </footer>
+    </body>
+
+</html>

@@ -25,4 +25,4 @@ $$ avg = \frac{first+last}{2} $$
 # LAST RESORT IS TO CHECK OUT OPTION AND TRY TO SIMLUATE
 - example   
 ![this](pictures/pic.png)
-- isme check out option and simulate the things they daying
+- isme check out option and simulate the things they saying
