@@ -1,0 +1,2 @@
+- ## object is parent of all classes
+- ### CharSequence is a interface
