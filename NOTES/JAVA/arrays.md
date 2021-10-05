@@ -1,7 +1,7 @@
 
 # arrays
-- #### binary search
-	- same as in collection
+- #### binary search(sortedArray,key)
+	- ##### finds the key, **if not exists** then it returns the possible `place it could have been`
 - #### copyOf(inp,len)
 	- #### returns a shallow copy with new length , truncates or paddes as needed
 - #### copyOfRange(inp,begin,end)

@@ -1,0 +1,1 @@
+pandoc --defaults "C:\Users\Administrator\pandoc-config\dracula.yaml" -f markdown-implicit_figures -o test.pdf averages.md

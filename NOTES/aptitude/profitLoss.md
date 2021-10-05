@@ -1,6 +1,8 @@
 #Basics
 - ### if they have given different number of buying items  and diffrent number of selling. you've gotta make them in same number. pretty basic stuff
 - ![example](./pictures/pl.png)
+- #### take lcm of 6 and 9
+- ![imageAlt](./pictures/pl7.png)
 # if the selling price and cost price is same, then only quantity varies.
 - ## the cost of 1 item is 
 - $x= sumOfAllItems$
@@ -8,7 +10,7 @@
 ![imageAlt](./pictures/pl2.png)
 - here the answer is 16800/(18+3).
 ![imageAlt](./pictures/pl3.png)
-- ### here in this case its 15/5.
+- ### here in this case its 5/15.
 
 #diffrent inference
 ![imageAlt](./pictures/pl4.png)

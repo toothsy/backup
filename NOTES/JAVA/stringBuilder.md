@@ -1,7 +1,7 @@
 # StringBuilder
 - #### not thread safe, but fast.
 ```java 
-StringBuilder sb = new StringBuilder("HelloWorld");
+StringBuilder sb = new StringBuilder("Hello World");
 ```
 - #### .append(s)
 	- #### adds "s" to sb
@@ -19,4 +19,6 @@ StringBuilder sb = new StringBuilder("HelloWorld");
 	- #### char at that index is changed to char you supplied.
 - #### .setLength(newLength)
 	- #### padds extra null character '\0'  in the sb if newLength is greater than cuurrent size.
+- #### .indexOf(substr)
+	- #### returns the first occurrence of the substr else -1.
 ![imageAlt](./pictures/colp3.png)

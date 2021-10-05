@@ -40,11 +40,9 @@
 - #### when they meet between 4 and 5
 - #### 4 is 4 away from 12, so $30*4$ is numerator
 - #### then divide it by 5.5 and thats the answer.
-- #### then learn the division by 11 tricks
 - #### when they meet between 3 and 4
 - #### 3 is 3 away from 12, so $30*3$ is numerator
 - #### then divide it by 5.5 and thats the answer.
-- #### then learn the division by 11 tricks
 - # here find the nearest 11 multiple and subtract it for the fraction
 - ## so for 90  $8\frac{2}{11}$<sup>th</sup> is the answer
 
