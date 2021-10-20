@@ -1,0 +1,1 @@
+jt -t oceans16 -ofs 12 -dfs 12 -fs 13 -nf opensans -f ubuntu -T -tfs 12 -m 100 -lineh 200 -cellw 1080
