@@ -26,5 +26,9 @@
 	- here it doesnt make sense to give the user all different ports when in reality they just need one.
 	- the designer forced this onto the user which is bad.
 
-	
+# Dependency Inversion
+- basically dont entirely depend on one api as that leads to high coupling.
+- you need to implement a intermediatory class that handles all the implementation, and you just call that intermediatory class method.
+- <img src="./pictures/dp8.png" alt="drawing" width=350/>
+- see here you just call the payment processor and that class handles which api to choose.
 
