@@ -51,9 +51,9 @@ dec = 3
 ![imageAlt](./pictures/calp2.png)
 - #### see here the date is basic division, 
 - #### month is every month before it
-- #### year is the reference year and `not 2016`
+- #### centennial year is the reference year and `not 2016`
 	- ## from reference year calculate the number of leap and normal years.
-		- ### here 2000 se you hace 16  years, 4 ly, rest 12 normal
+		- ### here 2000 se you have 16  years, 4 ly, rest 12 normal
 		- ### now every ly has 2 extra and normal have 1 extra, adding upto 20
 		- ### $$20\%7 \quad = \quad  6$$ 
 	- ## now the month is every month before may,
@@ -62,7 +62,7 @@ dec = 3
 	- ## finally the date is 0
 	- ### so your final answer is   
 	- ## $$\lparen 6+1 \rparen = 7\\  7\%7 \quad is \quad 0  $$
-	- # SUNDAY IS THE ANSWER
+	- # $$ SUNDAY $$
 # reference types
 ![imageAlt](./pictures/calp3.png)
 - # when they have given a reference use it to find the nearest  leap year and remember 

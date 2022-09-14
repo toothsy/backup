@@ -18,14 +18,14 @@ $$ avg = \frac{first+last}{2} $$
 
 # when they have given the average and someone leaves.
  - `there are 2 possibilities`
-    - tthe average either `reduces` or `increases`
+    - the average either `reduces` or `increases`
       - if it `reduces` then `person who left` had `more than the average`.
       - if average `increases` then `person who left` had `less than the average`
   - their `value`  is going to be
   
   $$value  = rest*amountOfAverageChange $$
 
-# LAST RESORT IS TO CHECK OUT OPTION AND TRY TO SIMLUATE\
+# LAST RESORT IS TO CHECK OUT OPTION AND TRY TO SIMULATE
 
 - example   
 ![this](pictures/pic.png)
