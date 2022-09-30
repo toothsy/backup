@@ -38,3 +38,8 @@
 - `curdate()`
 - `date_add(d1,int)` here d1 is a datetime col, int is the interval you want to add.
 - `datediff(d1,d2)` gives the difference between the dates, ensure  d1>d2
+
+
+# temporay table
+- lost after session is closed.
+- `CREATE TEMPORARY TABLE ....`, same as normal after wards.
